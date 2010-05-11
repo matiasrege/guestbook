@@ -5,4 +5,9 @@ class GuestbookWebTests extends grails.util.WebTest {
         invoke '/'
         verifyText 'Bienvenido'
     }
+
+    void testDebeSaludarEnPortugues() {
+        invoke '/?lang=pt'
+        verifyText 'boas-vindas'
+    }
 }

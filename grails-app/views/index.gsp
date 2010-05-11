@@ -1,9 +1,9 @@
 <html>
     <head>
-        <title>Bienvenido</title>
+        <title><g:message code="home.saludo" /></title>
 		<meta name="layout" content="main" />
     </head>
     <body>
-        <h1>Bienvenido</h1>
+        <h1><g:message code="home.saludo" /></h1>
     </body>
 </html>
