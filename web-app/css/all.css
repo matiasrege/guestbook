@@ -1,0 +1,68 @@
+body
+{
+  padding: 0;
+  margin: 0;
+  font-size: 0.85em;
+  background: #2e2e2e url(../images/bk.png) repeat-y left top;
+}
+body, input, textarea, select, optgroup
+{
+  font-family: "Lucida Grande", sans-serif;
+}
+input
+{
+  font-size:18px;
+  width:300px;
+}
+textarea
+{
+  font-size:18px;
+  width:300px;
+}
+input[type="submit"]
+{
+  font-weight: bold;
+}
+form
+{
+  margin: 0;
+}
+h1
+{
+  margin: 0 0 5px 0;
+  text-transform: lowercase;
+  font-weight: 800;
+  font-size: 24pt;
+  color: #e94074;
+}
+ul
+{
+  margin: 0;
+  padding: 0 0 0 0;
+  list-style-type: none;
+  display: block;
+}
+div#Main
+{
+  margin: 8px 0 0 162px;
+  padding: 0 8px 10px 8px;
+  width: 602px;
+  background-color: #fcfcfc;
+  -moz-border-radius:12px 12px 
+}
+div.user 
+{
+}
+div.message 
+{
+  background-color: #fee074;
+  margin: 0 0 0 10px;
+  display:block;
+  padding: 5px;
+  -moz-border-radius:12px 12px 
+}
+div#messages
+{
+  padding: 10px;
+  margin: 10px;
+}
