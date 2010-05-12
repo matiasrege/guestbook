@@ -13,6 +13,13 @@ class MessageController {
     }
     def index = { 
         def messages = Message.list()
-        [messages:messages]    
+        withFormat {
+            json { 
+                render(contentType:"application/json") {
+                    messages
+                }
+            }
+            html messages:messages
+        }
     }
 }
