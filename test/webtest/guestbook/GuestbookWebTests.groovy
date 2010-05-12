@@ -1,17 +1,17 @@
 package guestbook
 
 class GuestbookWebTests extends grails.util.WebTest {
-    void testDebeSaludarEnEncabezado() {
+    void testShowWelcomeMessage() {
         invoke '/'
         verifyText 'Bienvenido'
     }
 
-    void testDebeSaludarEnPortugues() {
+    void testShowWelcomeMessageInPortuguese() {
         invoke '/?lang=pt'
         verifyText 'boas-vindas'
     }
 
-    void testDejarNombreYMensaje() {
+    void testUserCanLeaveHisNameAndAMessage() {
         invoke '/'
         setInputField forLabel:"Nombre", value:"Jose"
         setInputField forLabel:"Mensaje", value:"Este es un mensaje de prueba"
